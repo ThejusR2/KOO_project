@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="koo.KOO_automation"/>
+    </classes>
+  </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="koo.KOO_automation">
+        <methods>
+          <include name="tc12"/>
+          <include name="AT"/>
+          <include name="tc1"/>
+          <include name="tc13"/>
+          <include name="tc10"/>
+          <include name="tc11"/>
+        </methods>
+      </class> <!-- koo.KOO_automation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
